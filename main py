@@ -1,0 +1,52 @@
+import math
+
+class ScientificCalculator:
+    def __init__(self):
+        pass
+
+    def add(self, x, y):
+        return x + y
+
+    def subtract(self, x, y):
+        return x - y
+
+    def multiply(self, x, y):
+        return x * y
+
+    def divide(self, x, y):
+        if y == 0:
+            return "Error: Division by zero!"
+        else:
+            return x / y
+
+    def power(self, x, y):
+        return x ** y
+
+    def square_root(self, x):
+        if x < 0:
+            return "Error: Square root of a negative number!"
+        else:
+            return math.sqrt(x)
+
+    def sin(self, x):
+        return math.sin(x)
+
+    def cos(self, x):
+        return math.cos(x)
+
+    def tan(self, x):
+        return math.tan(x)
+
+    def inverse_sin(self, x):
+        return math.asin(x)
+
+    def inverse_cos(self, x):
+        return math.acos(x)
+
+    def inverse_tan(self, x):
+        return math.atan(x)
+
+# Example usage:
+calculator = ScientificCalculator()
+print(calculator.add(5, 3))  # Output: 8
+print(calculator.sin(math.pi/2))  # Output: 1.0
